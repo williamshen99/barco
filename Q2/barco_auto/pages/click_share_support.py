@@ -17,31 +17,17 @@ class ClickShareSupportPage(BasePage):
     def wait_for_result_title(self):
         self.wait_for_element(*ClickShareSupportPageLocators.TEXT_RESULT_TITLE)
 
-    def wait_for_result_detail(self):
-        self.wait_for_element(*ClickShareSupportPageLocators.TEXT_RESULT_DETAIL)
-
     def get_result_detail(self):
         return self.get_element_text(*ClickShareSupportPageLocators.TEXT_RESULT_DETAIL)
 
+    def get_validation_error_empty_char(self):
+        return self.get_element_text(*ClickShareSupportPageLocators.TEXT_VALIDATION_ERROR_EMPTY_CHAR)
 
-"""
-class AmazonLoginPage(BasePage):
+    def get_validation_error_min_chars_required(self):
+        return self.get_element_text(*ClickShareSupportPageLocators.TEXT_VALIDATION_ERROR_MIN_CHARS_REQUIRED)
 
-    def input_account_info(self, keys=test_accounts['valid']['account']):
-        self.input_keys(keys, *AmazonLoginPageLocators.INPUT_ACCOUNT_COLUMN)
-        
-    def click_continue_button(self):
-        self.click_element(*AmazonLoginPageLocators.CONTINUE_BUTTON)
+    def get_validation_error_wrong_format(self):
+        return self.get_element_text(*ClickShareSupportPageLocators.TEXT_VALIDATION_ERROR_WRONG_FORMAT)
 
-    def input_password(self, keys=test_accounts['valid']['password']):
-        self.input_keys(keys, *AmazonLoginPageLocators.INPUT_PASSWORD_COLUMN)
-
-    def click_login_button(self):
-        self.click_element(*AmazonLoginPageLocators.LOGIN_BUTTON)
-
-    def click_logout_button(self):
-        self.click_element_not_interactable(*AmazonLoginPageLocators.LOGOUT_TEXT)
-
-    def get_login_err(self):
-        self.get_element_text(*AmazonLoginPageLocators.LOGIN_ERR_TEXT)
-"""
+    def get_can_not_found_error(self):
+        return self.get_element_text(*ClickShareSupportPageLocators.TEXT_CAN_NOT_FOUND_ERROR)

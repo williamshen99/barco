@@ -40,7 +40,10 @@ class BasePage(object):
         if element is not None:
             text = element.text
             if not text:
-                text = element.get_attribute('innerText')
+                if element.get_attribute('innerText'):
+                    text = element.get_attribute('innerText')
+                elif element.get_attribute('innerHTML'):
+                    text = element.get_attribute('innerHTML')
             return text
         return None
 

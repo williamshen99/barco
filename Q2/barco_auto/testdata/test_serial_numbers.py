@@ -19,6 +19,7 @@ test_serial_numbers = {
             'no_warranty': '186232437',
             'empty_char': '',
             'less_than_minimize_chars': '12345',
+            'wrong_format': '你好啊我很好',
             'not_number': 'abcdef'
         }
 }

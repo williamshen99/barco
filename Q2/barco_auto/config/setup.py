@@ -44,7 +44,7 @@ class BrowserWebDriver:
         return webdriver[browser]()
 
     def get_chrome_webdriver(self):
-        path = driver = None
+        driver = None
 
         options = webdriver.chrome.options.Options()
         options.add_argument("incognito")

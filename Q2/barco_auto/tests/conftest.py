@@ -31,4 +31,4 @@ def go_to_click_share_support_page(setup):
 
     setup.click_share_support.open_page(url)
     
-    return setup
+    return setup.click_share_support

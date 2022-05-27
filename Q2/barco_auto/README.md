@@ -21,7 +21,7 @@ please help to replace with a correct webdriver it if your browser is not this v
 
 * download this repo
 * open terminal
-* go to folder /amazon_login
+* go to folder /barco_auto
 * run the command below to create and activate environment:
 ```bash
 python3 -m venv tutorial-env
@@ -39,4 +39,4 @@ pytest tests
 ```
 
 * you will see the test result in the terminal
-* you also can go to /amazon_login/report to see the report: report.html
+* you also can go to folder /report to see the report: report.html
